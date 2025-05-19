@@ -18,7 +18,7 @@ public class TestGet {
 		get("/api/users?page=2").
 		then().
 		statusCode(200).
-		body("data[0].last_name",equalTo("Lawon")).
+		body("data[0].last_name",equalTo("Laswon")).
 		body("data.last_name",hasItems("Lawson","Fergson","Funke")).
 		log().all();	
 		
